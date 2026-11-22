@@ -17,6 +17,8 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 日常工作模板放在 `content/分类名/`。Codex 学习工程和 Python 小工具模板分别放在 `content/codex/01-组名/01-分类名/` 和 `content/python/01-组名/01-分类名/`。每条各用一个 Markdown 文件，文件名前缀 `1-`、`2-`、`3-` 分别对应基础单轮、进阶多轮、高阶综合运用。分类与计数在构建时生成。
 
+日常工作流模板放在 `content/workflows/01-日常工作流/01-分类名/`。每套模板的三轮分别覆盖任务启动、处理与交接，以及复验或关闭。
+
 ```markdown
 # 条目标题
 

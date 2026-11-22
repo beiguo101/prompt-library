@@ -17,7 +17,7 @@ const groups = new Map();
 const pages = [];
 const levels = ['基础 · 单轮', '进阶 · 多轮', '高阶 · 综合运用'];
 const categories = [];
-const leveledRoots = ['python', 'codex'];
+const leveledRoots = ['workflows', 'python', 'codex'];
 for (const root of leveledRoots) {
   for (const group of await directories(`content/${root}/`)) {
     const path = `content/${root}/` + encodeURIComponent(group) + '/';
@@ -121,7 +121,7 @@ const navigation = [...groups].map(([group, links], index) => `<section class="c
 pages.push(['index.html', renderPage('日常提示词库', `<main class="container">
   <header class="intro">
     <h1>日常提示词库</h1>
-    <p>Python 小工具、Codex 学习工程与日常工作提示词</p>
+    <p>日常工作流、Python 小工具与 Codex 学习工程</p>
   </header>
   ${navigation.join('\n')}
 </main>`)]);
